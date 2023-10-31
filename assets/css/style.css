@@ -274,6 +274,19 @@ section {
   padding: 60px 0;
   overflow: hidden;
 }
+section.section-bg {
+  background-color: #272829;
+}
+@media (min-width: 992px) {
+  section.section-bg {
+    margin-left: -7rem;
+    padding-left: 7rem;
+  }
+}
+section.section-bg h4,
+section.section-bg p {
+  color: #e9ebe9;
+}
 
 .section-title {
   text-align: center;
@@ -665,4 +678,23 @@ section {
   #hero {
     padding-left: 160px;
   }
+}
+#projects .projects-wrapper .slick-arrow {
+  position: absolute;
+  color: #fceded;
+  font-size: 35px;
+  right: 0;
+  cursor: pointer;
+}
+#projects .projects-wrapper .project .medias .slick-arrow {
+  position: absolute;
+  bottom: 0px;
+  color: #272829;
+  font-size: 35px;
+  right: 0;
+  cursor: pointer;
+}
+#projects .projects-wrapper .project .medias .bxs-left-arrow-circle.slick-arrow {
+  margin-right: 40px;
+  z-index: 1;
 }/*# sourceMappingURL=style.css.map */

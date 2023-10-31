@@ -352,6 +352,20 @@ h6 {
 section {
   padding: 60px 0;
   overflow: hidden;
+
+  &.section-bg {
+    background-color: $primary-color;
+
+    @media (min-width: 992px) {
+      margin-left: -7rem;
+      padding-left: 7rem;
+    }
+
+    h4,
+    p {
+      color: $brand-white;
+    }
+  }
 }
 
 .section-title {
@@ -723,70 +737,6 @@ section {
   }
 }
 
-// .portfolio-details {
-//   padding: 40px 0;
-
-//   .portfolio-title {
-//     font-size: 26px;
-//     font-weight: 700;
-//     margin-bottom: 20px;
-//   }
-
-//   .portfolio-details-carousel {
-//     .owl-nav {
-//       margin-top: 5px;
-//       text-align: center;
-//     }
-
-//     .owl-dots {
-//       margin-top: 5px;
-//       text-align: center;
-//     }
-
-//     .owl-dot {
-//       display: inline-block;
-//       margin: 0 5px;
-//       width: 12px;
-//       height: 12px;
-//       border-radius: 50%;
-//       background-color: $brand-white !important;
-//     }
-
-//     .owl-dot.active {
-//       background-color: $secondary-color !important;
-//     }
-//   }
-
-//   .portfolio-info {
-//     padding-top: 45px;
-
-//     h3 {
-//       font-size: 22px;
-//       font-weight: 400;
-//       margin-bottom: 20px;
-//     }
-
-//     ul {
-//       list-style: none;
-//       padding: 0;
-//       font-size: 15px;
-
-//       li {
-//         + {
-//           li {
-//             margin-top: 10px;
-//           }
-//         }
-//       }
-//     }
-
-//     p {
-//       font-size: 15px;
-//       padding: 15px 0 0 0;
-//     }
-//   }
-// }
-
 #footer {
   background: $primary-color;
   color: $brand-white;
@@ -899,5 +849,36 @@ section {
 
   #hero {
     padding-left: 160px;
+  }
+}
+
+#projects {
+  .projects-wrapper {
+    .slick-arrow {
+      position: absolute;
+      // top: 0px;
+      color: $body-bg;
+      font-size: 35px;
+      right: 0;
+      cursor: pointer;
+    }
+
+    .project {
+      .medias {
+        .slick-arrow {
+          position: absolute;
+          bottom: 0px;
+          color: $primary-color;
+          font-size: 35px;
+          right: 0;
+          cursor: pointer;
+        }
+
+        .bxs-left-arrow-circle.slick-arrow {
+          margin-right: 40px;
+          z-index: 1;
+        }
+      }
+    }
   }
 }
