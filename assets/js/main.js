@@ -1,9 +1,3 @@
-/**
- * Template Name: MyResume - v2.1.0
- * Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
- * Author: BootstrapMade.com
- * License: https://bootstrapmade.com/license/
- */
 !(function ($) {
   "use strict";
 
@@ -207,13 +201,27 @@
     speed: 1000,
     slidesToShow: 1,
     adaptiveHeight: true,
-    prevArrow: '<i class="bx bxs-left-arrow-circle"></i>',
-    nextArrow: '<i class="bx bxs-right-arrow-circle"></i>',
+    nextArrow: '<i class="bx bx-up-arrow-circle" ></i>',
+    prevArrow: '<i class="bx bx-down-arrow-circle"></i>',
     dots: false,
+    vertical: true,
+    verticalSwiping: true,
+    autoplay: true,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          arrows: false,
+          vertical: false,
+          verticalSwiping: false,
+        },
+      },
+    ],
   });
+
   $(".projects-wrapper").slick({
     infinite: true,
-    speed: 1000,
+    speed: 1500,
     slidesToShow: 1,
     adaptiveHeight: true,
     prevArrow: '<i class="bx bxs-left-arrow-circle"></i>',

@@ -1,13 +1,12 @@
 $body-bg: #fceded;
 $primary-color: #272829;
-$secondary-color: #6d1a1a;
-$secondary-color-hover: #6d1a1ac2;
+$secondary-color: #5f9ea0;
+$secondary-color-hover: #456869;
 $passion-color: #cd5c5c;
 $brand-white: #e9ebe9;
 $main_title-color: #45505b;
 $black: #000000;
 $color_11: #011426;
-$color_14: #e80368;
 $color_18: #ff0000;
 $font-family_1: "Open Sans",
 sans-serif;
@@ -387,7 +386,7 @@ section {
       display: block;
       width: 120px;
       height: 1px;
-      background: $color_14;
+      background: $secondary-color-hover;
       bottom: 1px;
       left: calc(50% - 60px);
     }
@@ -856,26 +855,43 @@ section {
   .projects-wrapper {
     .slick-arrow {
       position: absolute;
-      // top: 0px;
+      top: -40px;
       color: $body-bg;
-      font-size: 35px;
+      font-size: 30px;
       right: 0;
       cursor: pointer;
+
+      @media (min-width: 768px) {
+        top: -80px;
+        font-size: 40px;
+      }
+    }
+
+    .bxs-left-arrow-circle.slick-arrow {
+      margin-right: 35px;
+
+      @media (min-width: 768px) {
+        margin-right: 45px;
+      }
     }
 
     .project {
       .medias {
         .slick-arrow {
           position: absolute;
-          bottom: 0px;
-          color: $primary-color;
+          top: initial;
+          bottom: 10px;
           font-size: 35px;
-          right: 0;
+          left: 10px;
           cursor: pointer;
+          mix-blend-mode: difference;
         }
 
-        .bxs-left-arrow-circle.slick-arrow {
-          margin-right: 40px;
+        .bx-up-arrow-circle.slick-arrow {
+          margin-bottom: 40px;
+        }
+
+        .bx-down-arrow-circle.slick-arrow {
           z-index: 1;
         }
       }
